@@ -158,7 +158,7 @@ jobs:
         name: ${{ github.event.inputs.DEVICE_NAME }}-${{ github.run_id }}
         tag_name: ${{ github.run_id }}
         body: |
-          Manifest: ${{ github.event.inputs.twrp-12.1 }}
+          Manifest: ${{ github.event.inputs.MANIFEST_BRANCH }}
           Device: ${{ github.event.inputs.bahamut_kddi }}
           Target: ${{ github.event.inputs.boot }}.img
       env:
